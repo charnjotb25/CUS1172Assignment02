@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+         <form id="addTask">
+          <div class="topbox">
+         <div class="heading">
+           <h1> Tasks List </h1>
+         </div>
+         <div class="tasks">
+           <div>
+           <input class = "taskName" id = "taskName" autocomplete="off" autofocus placeholder="Add New Task..." type="text">
+           </div>
+
+           <div id="priority_form">
+           <form>
+           <select name="selectPriority" id= "selectPriority" class="todo_select custom-select mb-2">
+           <option selected>Select Priority</option>
+           <option value="Low">Low</option>
+           <option value="Medium">Medium</option>
+           <option value="High">High</option>
+           </select>
+           </form>
+           </div>
+
+            <br>
+
+            <div class="status_form">
+
+                <label> Task Status: </label>
+
+             <div id="status_form">
+               <input class="status" type="radio" id="completed" name="task_status" value="completed">
+               <label for="completed">Completed</label>
+               <input class="task_status" type="radio" id="pending" name="task_status" value="pending">
+               <label for="pending">Pending</label>
+
+             </div>
+
+             <br>
+
+             <input id = "submit" type="submit">
+
+           </div>
+
+           </div>
+
+            </div>
+
+           <br>
+           <hr>
+           <br>
+            <div class="tasksDiv">
+               <h2 style="text-decoration:underline;"> Tasks </h2>
+               <ul id="task_list"> <ul>
+            </div>
+
+
+       </form>
+       </div>
+
+  </body>
+</html>
+    
