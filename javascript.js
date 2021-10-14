@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
       if(element.className === 'remove') {
         element.parentElement.remove();
-        element.tasks_list.remove();
+        let ele = element.parentElement;
+        tasks_list.remove(ele);
       }
 
 
