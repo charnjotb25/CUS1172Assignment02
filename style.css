@@ -1,0 +1,101 @@
+
+body{
+  background-color: #92a8d1;;
+}
+
+.heading{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading h1{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.heading h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+
+.heading h1:hover::before{
+    width: 80%;
+}
+
+.topbox{
+    margin-top: 25px;
+    background-color:tomato;
+    padding: 50px;
+    border-style: solid;
+    border-width: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.taskName{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    position: center;
+}
+
+#selectPriority{
+    width: 75%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    position: center;
+    cursor:pointer;
+}
+
+.status_form label{
+    font-size: 20px;
+    font-family: Garamond, serif;
+    font-weight: bold;
+}
+
+#submit{
+  background-color: #CAFAFE;
+  color: black;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+#submit:hover{
+/*  background-color: #FFCB9A; */
+    background-color: #77A6F7;
+}
+
+.tasksDiv{
+  background-color: tomato;
+  border-style: solid;
+  border-width: 5px;
+  text-align: left;
+  position: relative;
+  padding:15px;
+}
+
+ul{
+  list-style-type: square;
+    padding:10px;
+}
+ul li{
+  font-size: 20px;
+  font-family: Garamond, serif;
+  font-weight: bold;
+
+    margin-top: 20px;
+
+}
+
